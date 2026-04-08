@@ -86,5 +86,5 @@ MIT © 2026
 <hr />
 
 <p align="center">
-  <sub>Construído con ❤️ por <strong>Pablo Amion</strong> — © 2026</sub>
+  <sub>Construido con ❤️ por <strong>Pablo Amion</strong> — © 2026</sub>
 </p>
