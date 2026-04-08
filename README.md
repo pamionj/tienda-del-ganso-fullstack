@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🪿 La Tienda del Ganso (E-Commerce Full-Stack)
 
-## Getting Started
+Una aplicación web de comercio electrónico, construida con **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, **shadcn/ui**, **Prisma ORM** y **Neon PostgreSQL**. Diseñada como un proyecto de portafolio profesional para mostrar una arquitectura escalable, bases de datos reales en la nube, y la mejor experiencia de usuario en teléfonos móviles y escritorio.
 
-First, run the development server:
+---
+
+## ✨ Stack Tecnológico
+
+| Capa | Tecnología | Propósito |
+|-------|-----------|---------|
+| Framework | [Next.js 15](https://nextjs.org) | App Router, React Server Components, API Routes |
+| Base de Datos | Neon (Serverless Postgres) | Almacenamiento relacional ultrarrápido en la nube |
+| ORM | Prisma | Modelado de datos y consultas tipadas seguras |
+| UI & Estilos | Tailwind CSS + shadcn/ui | Sistema de componentes limpio, responsivo y elegante |
+| Estado Global | Zustand | Gestión ágil de las lógicas del carrito |
+| Formularios| react-hook-form + zod | Validación hiper-segura en pasos de Checkout y Contacto |
+
+---
+
+## 🚀 Cómo Inicializar el Proyecto Localmente
+
+### 1. Requisitos Previos e Instalación
+- Node.js ≥ 22
+- Una base de datos gratuita de [Neon.tech](https://neon.tech)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tu-usuario/tienda-del-ganso-fullstack.git
+cd tienda-del-ganso-fullstack
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Variables de Entorno (`.env`)
+Configura las credenciales de tu base de datos en un archivo `.env`:
+```env
+DATABASE_URL="postgresql://usuario:password@eu-tu-db.neon.tech/neondb?sslmode=require"
+DIRECT_URL="postgresql://usuario:password@eu-tu-db.neon.tech/neondb?sslmode=require"
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Migración y Semillero (Seed)
+Empuja tu esquema de tablas y corre el servidor comercial:
+```bash
+npx prisma db push
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> **Aviso Importante:** Al iniciar por primera vez, entra con tu navegador a `http://localhost:3000/api/seed` para que la base de datos consuma automáticamente los 20 objetos de nuestro catálogo de prueba (Seeding).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌟 Características Destacadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🛒 Catálogo Conectado a SQL
+- Tarjetas de producto alimentadas agresivamente por **PostgreSQL**.
+- UX de **filtros avanzados**: El menú de filtros de catálogo para versión móvil utiliza un Drawer inteligente tipo App Nativa.
+- Imágenes de producto precargadas y listas para compresión en los Edge Servers de Vercel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 💳 Checkout en API Segura
+- El cálculo total no confía en el navegador del usuario: el endpoint `/api/checkout` repasa el carrito contra la base de datos real para protegerte contra manipulación de montos.
+- Animaciones limpias y redirección a página de éxito dinámica de servidor.
 
-## Deploy on Vercel
+### 🦆 Identidad de Marca Unificada
+- Cero links rotos (`/about`, `/contact`).
+- Identidad cálida, tonos *"naranja ganso"*, y esquinas redondas y amistosas gracias a los Design Tokens personalizables de Tailwind.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🚀 **Roadmap Futuro (Version 2.0):** Panel de Administración Seguro y Almacenamiento Dinámico de Archivos (Imágenes) con Supabase Storage o AWS S3.
+
+---
+
+## 📄 Licencia
+
+MIT © 2026
