@@ -13,6 +13,12 @@
 
 Una aplicación web de comercio electrónico, construida con **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, **shadcn/ui**, **Prisma ORM** y **Neon PostgreSQL**. Diseñada como un proyecto de portafolio profesional para mostrar una arquitectura escalable, bases de datos reales en la nube, y la mejor experiencia de usuario en teléfonos móviles y escritorio.
 
+<p align="center">
+  <a href="https://tienda-del-ganso-fullstack.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel" alt="Live Demo">
+  </a>
+</p>
+
 ---
 
 ## ✨ Stack Tecnológico
