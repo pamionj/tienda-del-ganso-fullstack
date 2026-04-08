@@ -1,4 +1,15 @@
-# 🪿 La Tienda del Ganso (E-Commerce Full-Stack)
+# La Tienda del Ganso (E-Commerce Full-Stack)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-15-black?logo=next.js&logoColor=white" alt="Next.js 15" />
+  <img src="https://img.shields.io/badge/Neon-Postgres-00e5a0?logo=postgresql&logoColor=white" alt="Neon" />
+  <img src="https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma&logoColor=white" alt="Prisma" />
+  <img src="https://img.shields.io/badge/Tailwind-3-38bdf8?logo=tailwindcss&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/shadcn%2Fui-UI-000000?logo=shadcnui&logoColor=white" alt="shadcn/ui" />
+  <img src="https://img.shields.io/badge/Zustand-State-764ABC?logo=react&logoColor=white" alt="Zustand" />
+  <img src="https://img.shields.io/badge/React%20Hook%20Form-Form-EC5990?logo=reacthookform&logoColor=white" alt="React Hook Form" />
+  <img src="https://img.shields.io/badge/Zod-Validation-3068B7?logo=zod&logoColor=white" alt="Zod" />
+</p>
 
 Una aplicación web de comercio electrónico, construida con **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, **shadcn/ui**, **Prisma ORM** y **Neon PostgreSQL**. Diseñada como un proyecto de portafolio profesional para mostrar una arquitectura escalable, bases de datos reales en la nube, y la mejor experiencia de usuario en teléfonos móviles y escritorio.
 
@@ -71,3 +82,9 @@ npm run dev
 ## 📄 Licencia
 
 MIT © 2026
+
+<hr />
+
+<p align="center">
+  <sub>Built with ❤️ by <strong>Pablo Amion</strong> — © 2026</sub>
+</p>
